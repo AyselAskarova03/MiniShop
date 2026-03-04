@@ -38,7 +38,6 @@ export default function Cart() {
       <h1>YOUR CART</h1>
 
       <div className={styles.wrapper}>
-        {/* LEFT SIDE */}
         <div className={styles.items}>
           {items.map((item) => (
             <div
@@ -59,7 +58,6 @@ export default function Cart() {
                     </p>
                   </div>
 
-                  {/* RED TRASH ICON */}
                   <button
                     className={styles.remove}
                     onClick={() =>

@@ -45,21 +45,20 @@ export default function SearchPage() {
   const filteredProducts = useMemo(() => {
     let filtered = [...products];
 
-    // PRICE FILTER
     filtered = filtered.filter(
       (product) => product.price <= maxPrice
     );
 
-    // COLOR FILTER (fake logic)
+
     if (selectedColor) {
       filtered = filtered.filter((product) =>
         product.title
           .toLowerCase()
-          .includes("shirt") // sadə demo üçün
+          .includes("shirt")
       );
     }
 
-    // SORT
+
     switch (sortOption) {
       case "price-asc":
         filtered.sort((a, b) => a.price - b.price);
@@ -86,11 +85,9 @@ export default function SearchPage() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        {/* SIDEBAR */}
+
         <aside className={styles.sidebar}>
           <h3>Filters</h3>
-
-          {/* PRICE */}
           <div className={styles.filterGroup}>
             <p>Max Price: ${maxPrice}</p>
             <input
@@ -103,8 +100,6 @@ export default function SearchPage() {
               }
             />
           </div>
-
-          {/* COLOR */}
           <div className={styles.filterGroup}>
             <p>Color</p>
             <div style={{ display: "flex", gap: "10px" }}>
@@ -129,8 +124,6 @@ export default function SearchPage() {
               ))}
             </div>
           </div>
-
-          {/* SORT */}
           <div className={styles.filterGroup}>
             <p>Sort By</p>
             <select
@@ -157,8 +150,6 @@ export default function SearchPage() {
             </select>
           </div>
         </aside>
-
-        {/* PRODUCTS */}
         <div className={styles.products}>
           <h2 className={styles.title}>
             Search results for "{query}"
