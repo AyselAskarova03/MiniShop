@@ -1,0 +1,166 @@
+.footer {
+  background: #f2f2f2;
+  padding-top: 120px;
+}
+
+.newsletter {
+  max-width: 1240px;
+  margin: 0 auto 100px;
+  background: #000;
+  border-radius: 24px;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsLeft h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.newsRight {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 999px;
+  height: 56px;
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.inputWrapper input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.newsRight button {
+  height: 56px;
+  border-radius: 999px;
+  border: none;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsRight button:hover {
+  background: #e5e5e5;
+}
+
+
+
+.footerMain {
+  max-width: 1240px;
+  margin: 0 auto 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.brand {
+  max-width: 260px;
+}
+
+.brand h3 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.brand p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  gap: 80px;
+}
+
+.links h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.links a {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.links a:hover {
+  color: #000;
+}
+
+.bottom {
+  border-top: 1px solid #ddd;
+  padding: 25px 20px;
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom p {
+  font-size: 13px;
+  color: #777;
+}
+
+.payments {
+  display: flex;
+  gap: 16px;
+  font-size: 28px;
+}
+
+
+@media (max-width: 1000px) {
+  .newsletter {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 50px 40px;
+  }
+
+  .newsRight {
+    width: 100%;
+  }
+
+  .footerMain {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

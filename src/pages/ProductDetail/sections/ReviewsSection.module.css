@@ -1,0 +1,199 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.top h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.top span {
+  color: #888;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filterBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  background: white;
+  cursor: pointer;
+}
+
+.select {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+.writeBtn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.form input,
+.form textarea,
+.form select {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.form button {
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: black;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 24px;
+  background: white;
+  transition: 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.starActive {
+  color: #f4b400;
+}
+
+.star {
+  color: #ddd;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.verified {
+  color: #22c55e;
+}
+
+.text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.date {
+  font-size: 12px;
+  color: #999;
+}
+
+.menuWrapper {
+  position: relative;
+}
+
+.menuIcon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.menuDropdown {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.menuDropdown button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.loadMore button {
+  padding: 10px 26px;
+  border-radius: 24px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.loadMore button:hover {
+  background: #f7f7f7;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

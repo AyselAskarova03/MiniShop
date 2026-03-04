@@ -1,0 +1,28 @@
+.section {
+  width: 100%;
+  background: black;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  gap: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+  }
+}
